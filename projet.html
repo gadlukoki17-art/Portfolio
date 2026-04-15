@@ -9,6 +9,42 @@
     <title>Mes projets</title>
 </head>
 <body>
-    
+    <header class="fixed top-0 w-full p-4 px-6 bg-slate-50/50 backdrop-blur-sm">
+        <nav class="flex items-center justify-between md:flex-row">
+            <!-- LOGO -->
+            <h1 class="text-[1.50rem] font-bold">
+                <a href="index.html">Gad Lukoki</a>
+            </h1>
+            <!-- BURGER (mobile only) -->
+            <input id="menu-toggle" type="checkbox" class="hidden peer">
+            <label for="menu-toggle"class="md:hidden flex flex-col gap-1 cursor-pointer">
+                <span class="w-6 h-0.5 bg-black"></span>
+                <span class="w-6 h-0.5 bg-black"></span>
+                <span class="w-6 h-0.5 bg-black"></span>
+            </label>
+            <!-- MENU + BUTTON (desktop + mobile dropdown) -->
+            <div class="hidden md:flex items-center peer-checked:flex text-center
+                    max-md:absolute max-md:top-full max-md:left-0 max-md:w-full
+                    max-md:flex-col max-md:bg-slate-50/90 max-md:backdrop-blur-md
+                    max-md:p-4">
+                <ul class="flex gap-6 text-center space-x-10 max-md:space-x-0 font-normal p-4 pr-20 max-md:pr-0">
+                    <li class="border-b-2 border-transparent hover:border-yellow-300 transition-all duration-300">
+                        <a href="cv.html">CV</a>
+                    </li>
+                    <li class="border-b-2 border-transparent hover:border-yellow-300 transition-all duration-300">
+                        <a href="projet.html">Projets</a>
+                    </li>
+                    <li class="border-b-2 border-transparent hover:border-yellow-300 transition-all duration-300">
+                      <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <a href="contact.html"
+                    class="bg-yellow-300 px-4 py-2 rounded-full text-black shadow-lg hover:bg-yellow-500">
+                    Contactez-moi
+                </a>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
