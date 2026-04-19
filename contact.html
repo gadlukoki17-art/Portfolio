@@ -46,11 +46,11 @@
             </div>
         </nav>
     </header>
-    <main class="mt-32 mx-16 max-md:mx-3">
+    <main class="mt-40 mx-16 max-md:mx-3">
         <section class="m-5">
-            <div>
-                <h2 class="text-xl font-bold mb-4">Contactez-moi</h2>
+            <div class="flex max-md:flex-col gap-10">
                 <div class="md:ml-2 flex flex-col gap-4">
+                    <h2 class="text-xl font-bold mb-4">Contactez-moi</h2>
                     <div class="flex gap-1">
                         <i class="fa-solid fa-phone mt-1"></i>
                         <div>
@@ -73,10 +73,25 @@
                         </div>
                    </div> 
                 </div> 
-            </div>            
-        </section>
-        <section>
-
+                <div class="max-w-2xl mx-auto bg-white p-6 rounded-xl shadow">
+                    <form class="space-x-4"></form>
+                    <!-- nom + prenom -->
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <input type="text" placeholder="Nom" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-yellow-300">
+                        <input type="text" placeholder="Prénom" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-yellow-300">
+                        <!-- Email -->
+                        <input type="email" placeholder="Email" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-yellow-300">
+                        <!-- sujet -->
+                        <input type="text" placeholder="Subjet" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-yellow-300">
+                        <!-- Message -->
+                        <textarea rows="5" placeholder="Votre message" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:border-yellow-300"></textarea>
+                        <!-- Bouton  -->
+                        <button type="submit" class="bg-yellow-300 w-24 h-24 rounded-full font-medium mx-auto my-auto hover:bg-[#c98705] hover:text-white px-4 py-2 transition duration-300 flex items-center justify-center  ease-in-out hover:scale-105 hover:-translate-y-1 hover:shadow-lg active:scale-95">
+                           Envoyer
+                        </button>
+                     </div>
+                </div>
+            </div>        
         </section>
     </main>
 </body>
