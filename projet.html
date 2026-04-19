@@ -46,16 +46,16 @@
             </div>
         </nav>
     </header>
-    <main class="mt-32 mx-16">
-        <section>
+    <main class="mt-32 mx-16 max-md:mx-6">
+        <section class="max-md:text-center ">
             <h2 class="mb-2 text-2xl font-bold">Mes 
                  <span class="text-yellow-300">Projets</span>
             </h2>
-            <p class="w-[40rem]">Voici une sélection de projets que j’ai réalisés.
+            <p class="w-[40rem] max-md:m-auto max-md:w-[16rem]">Voici une sélection de projets que j’ai réalisés.
                 Chaque projet représente un défi relevé avec passion et créativité.</p>
         </section>
-        <div class="flex mt-10 bg-white rounded-xl shadow">
-            <div class=" py-2 px-4 flex gap-6 text-center">
+        <div class=" max-md:flex-col flex mt-10 bg-white max-md:shadow-none max-md:rounded-none rounded-xl shadow">
+            <div class="max-md:flex-wrap max-md:gap-2 py-2 px-4 flex gap-6 transition-all duration-300">
                 <button class="px-4 py-1 rounded-full border-transparent bg-yellow-300">Tout</button>
                 <button class="px-4 py-1 rounded-full border border-transparent hover:border-yellow-300 transition">Sites web</button>
                 <button class="px-4 py-1 rounded-full border border-transparent hover:border-yellow-300 transition">Portfolio</button>
@@ -74,44 +74,71 @@
                 </select>
             </div>
         </div>
-        <section class="flex gap-4 mt-8">
-            <div class="flex bg-white shadow p-6 rounded-xl">
-                <div>
-                    <img src="img/portfolio.png" class="w-[13rem] h-60 shadow rounded-lg" alt="Portfolio">
-                </div>
-                <div>
-                    <div class="ml-4">
-                        <h3 class="mb-1 font-bold text-center text-xl">Portfolio Personnel</h3>
-                        <p class="mb-2 text-yellow-300 font-semibold text-center">Site web</p>
-                        <p class="w-[21.5rem]">Un site moderne et responsive pour présenter mes compétences, projets et mon parcours.
-                        Conçu pour offrir une expérience utilisateur fluide et agréable.</p>
+       <section class="px-6 md:px-10 lg:px-16 py-10">
+            <!-- GRID -->
+            <div class="grid gap-6 md:grid-cols-2">
+                <!-- PROJET 1 -->
+                <div class="bg-white rounded-xl shadow overflow-hidden">
+                    <!-- IMAGE -->
+                    <img src="img/potrtfoliopc.png"
+                    class="w-full h-48 md:h-56 object-cover">
+                    <!-- CONTENU -->
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg">Portfolio Personnel</h3>
+                        <span class="inline-block mt-1 text-xs bg-yellow-200 px-2 py-1 rounded">Sites web</span>
+                        <p class="text-gray-600 text-sm mt-3"style="
+                            display: -webkit-box;
+                            -webkit-line-clamp: 3;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;">
+                            Un site moderne et impactant conçu pour valoriser mes compétences,
+                            offrir une navigation fluide et donner une première impression forte
+                            aux recruteurs dès les premières secondes.
+                        </p>
+                        <!-- TECH -->
+                        <div class="flex flex-wrap gap-2 mt-4 text-xs">
+                            <span class="bg-gray-200 px-2 py-1 rounded">HTML</span>
+                            <span class="bg-gray-200 px-2 py-1 rounded">CSS</span>
+                            <span class="bg-gray-200 px-2 py-1 rounded">Tailwind CSS</span>
+                            <span class="bg-gray-200 px-2 py-1 rounded">JavaScript</span>
+                        </div>
+                        <!-- BTN -->
+                        <a href="#" class="mt-4 flex items-center gap-2 font-medium">Voir le projet →</a>
                     </div>
-                    <div class="flex gap-4 mb-6 mt-2 ml-4">
-                        <p class="px-3 py-1 bg-gray-300 rounded-3xl">HTML</p>
-                        <p class="px-3 py-1 bg-gray-300 rounded-3xl">Tailwind</p>
-                        <p class="px-3 py-1 bg-gray-300 rounded-3xl">JavaScript</p>
-                    </div>
-                    <a href="" class="ml-4">Voir le projet</a>
-                </div> 
-            </div> 
-            <div class="flex bg-white shadow p-6 rounded-xl">
-                <div>
-                    <img src="img/techcompter.png" class="w-[13rem] h-60 shadow rounded-lg" alt="Tech">
                 </div>
-                <div class="ml-4">
-                    <h3 class="mb-1 font-bold text-center text-xl">TechComputers</h3>
-                    <p class="mb-2 text-yellow-300 font-semibold text-center">Site web</p>
-                    <p class="w-[21.5rem]">Une plateforme e-commerce complète avec gestion des produits, panier, commandes et paiements sécurisés.Pensée pour convertir et fidéliser.</p>
-                    <div class="flex gap-4 mb-6 mt-2">
-                        <p class="px-3 py-1 bg-gray-300 rounded-3xl">HTML</p>
-                        <p class="px-3 py-1 bg-gray-300 rounded-3xl">Tailwind</p>
-                        <p class="px-3 py-1 bg-gray-300 rounded-3xl">JavaScript</p>
+                <!-- PROJET 2 -->
+                <div class="bg-white rounded-xl shadow overflow-hidden">
+                    <!-- IMAGE -->
+                    <img src="img/techcomputerpc.png" class="w-full h-48 md:h-56 object-cover">
+                    <!-- CONTENU -->
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg">Techcomputer</h3>
+                        <span class="inline-block mt-1 text-xs bg-yellow-200 px-2 py-1 rounded">Sites web</span>
+                        <p class="text-gray-600 text-sm mt-3"
+                            style="
+                            display: -webkit-box;
+                            -webkit-line-clamp: 3;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;">
+                            Un site pensée pour vendre efficacement, avec une interface claire,
+                            une expérience utilisateur optimisée et un design conçu pour convertir
+                            les visiteurs en clients.
+                        </p>
+                        <!-- TECH -->
+                        <div class="flex flex-wrap gap-2 mt-4 text-xs">
+                            <span class="bg-gray-200 px-2 py-1 rounded">HTML</span>
+                            <span class="bg-gray-200 px-2 py-1 rounded">CSS</span>
+                            <span class="bg-gray-200 px-2 py-1 rounded">JavaScript</span>
+                            <span class="bg-gray-200 px-2 py-1 rounded">PHP</span>
+                            <span class="bg-gray-200 px-2 py-1 rounded">MySQL</span>
+                        </div>
+                        <!-- BTN -->
+                        <a href="#" class="mt-4 flex items-center gap-2 font-medium">Voir le projet →</a>
                     </div>
-                    <a href="">Voir le projet</a>
                 </div>
-            </div>      
+            </div>
         </section>
-        <section class="mt-8 flex items-center justify-between p-6 bg-white rounded-xl shadow">
+        <section class="max-md:flex-wrap mt-8 flex items-center justify-between p-6 bg-white rounded-xl shadow">
             <div>
                 <h4 class="text-[1rem] font-semibold">Objectif</h4>
                 <p class="text-xs w-[9.5rem]">Créer des solutions utiles qui répondent à des besoins réels.</p>
@@ -129,13 +156,13 @@
                 <p class="text-xs w-[9.5rem]">L’expérience utilisateur est au cœur de chaque projet que je réalise.</p>
             </div>
         </section>
-        <section class="flex gap-4 justify-center mt-10">
-            <div class="flex items-center justify-center w-[50rem] bg-white rounded-xl shadow p-3">
+        <section class=" flex  justify-center mt-10">
+            <div class="max-md:flex-col max-md:gap-4 flex items-center justify-center w-[50rem] bg-white rounded-xl shadow p-3">
                 <div class="text-center">
                     <h4>Vous avez un projet en tête ?</h4>
                     <p>Je suis disponible pour collaborer et donner vie à vos idées.</p>
                 </div>
-                 <a href="contact.html"
+                <a href="contact.html"
                     class="bg-yellow-300 px-4 py-2 rounded-full text-black shadow-lg hover:bg-yellow-500">
                     Contactez-moi
                 </a>
