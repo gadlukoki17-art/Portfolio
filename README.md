@@ -8,7 +8,9 @@ Ceci est le dépôt de mon CV numérique, conçu pour présenter mon parcours, m
 Ce site a été développé avec l'objectif de créer une expérience utilisateur fluide et moderne, tout en conservant une structure de code propre et maintenable.
 
 * **Version :** 1.0.0
-* **Lien du site :** [https://github.com/kadea-academy-learners/projet-1-portfolio-gadlukoki17-art-1]
+* **Lien du site :** [https://gadlukoki17-art.github.io/Portfolio/]
+* **Lien du dépôt github :** [https://github.com/kadea-academy-learners/projet-1-portfolio-gadlukoki17-art-1]
+* **Lien figma :**[https://www.figma.com/design/IntwSXE8Smns2M2dqaFAgJ/maquette-Portfolio--copie-?node-id=0-1&p=f&t=SquYxr9CruhKjEf2-0]
 
 ## 🛠️ Stack Technique
 Voici les outils et langages que j'ai utilisés pour ce projet :
